@@ -28,16 +28,24 @@ public class MainActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                /*
                 Context context = getApplicationContext();
                 CharSequence text ="Successfully submit";
                 int duration = Toast.LENGTH_LONG;
                 Toast toast = Toast.makeText(context,text,duration);
                 toast.show();
-
-            /*
+                 */
+                /*check null form
+                if(name.getText()==) {
+                Toast.makeText(getApplicationContext(),"No value on form",Toast.LENGTH_LONG.show());
+                }
+                else {
+                    Toast.makeText(getApplicationContext(), "Name :  " + name.getText().toString() + " \n" + "Surname :  " + surname.getText().toString()
+                            + " \n" + "Phone :  " + phone.getText().toString(), Toast.LENGTH_LONG).show();
+                }
+                 */
                 Toast.makeText(getApplicationContext(), "Name :  " + name.getText().toString() + " \n" + "Surname :  " + surname.getText().toString()
                         + " \n" + "Phone :  " + phone.getText().toString(), Toast.LENGTH_LONG).show();
-                        */
             }
         });
 
