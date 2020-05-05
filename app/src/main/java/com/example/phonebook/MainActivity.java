@@ -16,28 +16,30 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final EditText name, surname, phone;
+        final EditText User, Password;
         Button submit;
 
-        name = (EditText) findViewById(R.id.editTextName);
-        surname = (EditText) findViewById(R.id.editTextSurname);
-        phone = (EditText) findViewById(R.id.editTextPhone);
+        User = (EditText) findViewById(R.id.edtUsername);
+        Password = (EditText) findViewById(R.id.edtPassword);
         submit = (Button) findViewById(R.id.btnsubmit);
 
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                /*
                 Context context = getApplicationContext();
                 CharSequence text ="Successfully submit";
                 int duration = Toast.LENGTH_LONG;
                 Toast toast = Toast.makeText(context,text,duration);
                 toast.show();
+                /*
 
-            /*
+                /*
                 Toast.makeText(getApplicationContext(), "Name :  " + name.getText().toString() + " \n" + "Surname :  " + surname.getText().toString()
                         + " \n" + "Phone :  " + phone.getText().toString(), Toast.LENGTH_LONG).show();
-                        */
+                */
             }
         });
 
